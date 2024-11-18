@@ -149,6 +149,7 @@ export interface CalendarContainerProps<T extends ICalendarEventBase> {
   eventsAreSorted?: boolean
   timeslots?: number
   hourComponent?: HourRenderer
+  eventOverlapping?: boolean
   scheduleMonthSeparatorStyle?: TextStyle
 }
 
@@ -221,6 +222,8 @@ function _CalendarContainer<T extends ICalendarEventBase>({
   timeslots = 0,
   hourComponent,
   scheduleMonthSeparatorStyle = {},
+  eventOverlapping = false,
+  
 }: CalendarContainerProps<T>) {
   // To ensure we have proper effect callback, use string to date comparision.
   const dateString = date?.toString()
