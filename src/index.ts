@@ -7,8 +7,8 @@ dayjs.extend(duration)
 dayjs.extend(isBetween)
 dayjs.extend(isoWeek)
 
-export * from './components/Calendar'
-export * from './components/CalendarBody'
+//export * from './components/Calendar'
+//export * from './components/CalendarBody'
 export * from './components/CalendarBodyForMonthView'
 export * from './components/CalendarEvent'
 export * from './components/CalendarEventForMonthView'
